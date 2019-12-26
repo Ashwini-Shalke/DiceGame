@@ -15,6 +15,7 @@
 		33CB167323B38BEF00E6A1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CB167123B38BEF00E6A1AB /* LaunchScreen.storyboard */; };
 		33CB167E23B38BF000E6A1AB /* DiceGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB167D23B38BF000E6A1AB /* DiceGameTests.swift */; };
 		33CB168923B38BF000E6A1AB /* DiceGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB168823B38BF000E6A1AB /* DiceGameUITests.swift */; };
+		33CB169723B3905B00E6A1AB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB169623B3905B00E6A1AB /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		33CB168423B38BF000E6A1AB /* DiceGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CB168823B38BF000E6A1AB /* DiceGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGameUITests.swift; sourceTree = "<group>"; };
 		33CB168A23B38BF000E6A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CB169623B3905B00E6A1AB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				33CB166F23B38BEF00E6A1AB /* Assets.xcassets */,
 				33CB167123B38BEF00E6A1AB /* LaunchScreen.storyboard */,
 				33CB167423B38BEF00E6A1AB /* Info.plist */,
+				33CB169623B3905B00E6A1AB /* CustomButton.swift */,
 			);
 			path = DiceGame;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CB169723B3905B00E6A1AB /* CustomButton.swift in Sources */,
 				33CB166B23B38BEB00E6A1AB /* ViewController.swift in Sources */,
 				33CB166723B38BEB00E6A1AB /* AppDelegate.swift in Sources */,
 				33CB166923B38BEB00E6A1AB /* SceneDelegate.swift in Sources */,
