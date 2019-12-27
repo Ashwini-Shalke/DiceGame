@@ -18,11 +18,12 @@ class CustomButton : UIButton {
     required init?(coder: NSCoder) {
         super.init(coder : coder)
         setUpButton()
+        
     }
     
     func setUpButton() {
         backgroundColor     = UIColor.red
-        titleLabel?.font    = UIFont(name: "Georgia Bold 20.0", size: 20)
+        titleLabel?.font    = UIFont(name: "georgia", size: 20)
         setTitleColor(.white, for: .normal)
         layer.borderColor   = UIColor.white.cgColor
         layer.cornerRadius  = 25
@@ -42,7 +43,7 @@ class CustomButton : UIButton {
     }
     
     
-    func shakeButton() {
+    func shakeAnimation() {
         let shake           = CABasicAnimation(keyPath: "position")
         shake.duration      = 0.1
         shake.repeatCount   = 2
@@ -61,7 +62,7 @@ class CustomButton : UIButton {
     }
     
     
-    func flashButton(){
+    func flashAnimation(){
         let flash               = CABasicAnimation(keyPath: "opacity")
         flash.duration          = 0.5
         flash.fromValue         = 1
@@ -73,7 +74,7 @@ class CustomButton : UIButton {
         
     }
     
-    func pulseButton(){
+    func pulseAnimation(){
         let pulse               = CASpringAnimation(keyPath: "transform.scale")
         pulse.fromValue         = 0.95
         pulse.toValue           = 1.0

@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "newbackground.png",
+      "filename" : "DiceAppIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "newbackground@2x.png",
+      "filename" : "DiceAppIcon@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "newbackground@3x.png",
+      "filename" : "DiceAppIcon@3x.png",
       "scale" : "3x"
     }
   ],
