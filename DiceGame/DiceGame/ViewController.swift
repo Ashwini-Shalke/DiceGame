@@ -72,18 +72,16 @@ class ViewController: UIViewController {
 //            cube.position = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
 //            
 //        // and add the cube to our main view's layer
-//            //view.layer.addSublayer(cube)
+//            view.layer.addSublayer(cube)
 //        
 //
 //    }
-    
-    
+//    
+//    
 //    func face(with transform: CATransform3D, image : String) -> CALayer {
 //        let face = CALayer()
 //        let myImage = UIImage(named: image)?.cgImage
-//
 //        face.frame = CGRect(x: -50, y: -50, width: 100, height: 100)
-//
 //        face.contents = myImage
 //
 ////        face.backgroundColor = color.cgColor
@@ -92,27 +90,23 @@ class ViewController: UIViewController {
 //    }
    
     
-    
+
     func setUpStartButton(){
         view.addSubview(startButton)
-        startButton.setTitle("START", for: .normal)
-        startButton.shakeAnimation()
         startButton.translatesAutoresizingMaskIntoConstraints = false
-        
         NSLayoutConstraint.activate([
-            startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            startButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 250),
-            startButton.widthAnchor.constraint(equalToConstant: 200),
-            startButton.heightAnchor.constraint(equalToConstant: 60)])
-        
+        startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        startButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
+        startButton.widthAnchor.constraint(equalToConstant: 200),
+        startButton.heightAnchor.constraint(equalToConstant: 60)])
+        startButton.setTitle("START", for: .normal)
+        startButton.flashAnimation()
         startButton.addTarget(self, action:#selector(stopButtonAction) , for: .allTouchEvents)
     }
-    
-    
+
+
     @objc func stopButtonAction(){
         startButton.layer.removeAllAnimations()
-        print("hey")
-       
     }
     
 

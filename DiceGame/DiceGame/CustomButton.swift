@@ -44,23 +44,12 @@ class CustomButton : UIButton {
     
     
     func shakeAnimation() {
-        let shake           = CABasicAnimation(keyPath: "position")
-        shake.duration      = 0.1
-        shake.repeatCount   = 2
-        shake.autoreverses  = true
-        
-        let fromPoint       = CGPoint(x: center.x - 6, y: center.y)
-        let fromValue       = NSValue(cgPoint : fromPoint)
-        
-        let toPoint         = CGPoint(x: center.x + 6, y: center.y)
-        let toValue         = NSValue(cgPoint: toPoint)
-        
-        shake.fromValue     = fromValue
-        shake.toValue       = toValue
-        
-        layer.add(shake , forKey: "position")
+        let shake               = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        shake.timingFunction    = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        shake.duration          = 0.5
+        shake.values            = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
+        layer.add(shake, forKey: "shake")
     }
-    
     
     func flashAnimation(){
         let flash               = CABasicAnimation(keyPath: "opacity")
