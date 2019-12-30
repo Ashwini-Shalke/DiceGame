@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         view.layer.contents = UIImage(named: "GreenBackground")?.cgImage
         setUpStartButton()
         constructCube()
+
+        
     }
     
     
@@ -55,7 +57,7 @@ class ViewController: UIViewController {
         cube.addSublayer(cube.face(with: transform6, image: "DiceSix"))
 
         // now position the transform layer in the center
-        cube.position = CGPoint(x: view.bounds.midX , y: view.bounds.midY)
+        cube.position = CGPoint(x: -100, y: -100)
 
         // and add the cube to our main view's layer
         
@@ -82,7 +84,11 @@ class ViewController: UIViewController {
        
 
     @objc func startRotation(){
-        cube.transformAnimation()
+       UIView.animate(withDuration: 0.30, delay: 0, options: .curveEaseInOut, animations: {
+        self.cube.position = CGPoint(x: self.view.bounds.midX , y: self.view.bounds.midY)
+        self.cube.transformAnimation()
+       }, completion: nil)
+        
         setStopButton()
     }
      
