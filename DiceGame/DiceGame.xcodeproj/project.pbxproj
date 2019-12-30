@@ -16,6 +16,7 @@
 		33CB167E23B38BF000E6A1AB /* DiceGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB167D23B38BF000E6A1AB /* DiceGameTests.swift */; };
 		33CB168923B38BF000E6A1AB /* DiceGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB168823B38BF000E6A1AB /* DiceGameUITests.swift */; };
 		33CB169723B3905B00E6A1AB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB169623B3905B00E6A1AB /* CustomButton.swift */; };
+		33CB16D623B9E41C00E6A1AB /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CB16D523B9E41C00E6A1AB /* Cube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		33CB168A23B38BF000E6A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33CB169623B3905B00E6A1AB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		33CB169823B4EC9300E6A1AB /* DiceGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiceGame.entitlements; sourceTree = "<group>"; };
+		33CB16D523B9E41C00E6A1AB /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				33CB167123B38BEF00E6A1AB /* LaunchScreen.storyboard */,
 				33CB167423B38BEF00E6A1AB /* Info.plist */,
 				33CB169623B3905B00E6A1AB /* CustomButton.swift */,
+				33CB16D523B9E41C00E6A1AB /* Cube.swift */,
 			);
 			path = DiceGame;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CB16D623B9E41C00E6A1AB /* Cube.swift in Sources */,
 				33CB169723B3905B00E6A1AB /* CustomButton.swift in Sources */,
 				33CB166B23B38BEB00E6A1AB /* ViewController.swift in Sources */,
 				33CB166723B38BEB00E6A1AB /* AppDelegate.swift in Sources */,

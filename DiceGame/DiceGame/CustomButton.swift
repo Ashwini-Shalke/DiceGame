@@ -22,14 +22,14 @@ class CustomButton : UIButton {
     }
     
     func setUpButton() {
-        backgroundColor     = UIColor.red
+        backgroundColor     = UIColor(red: 150/255, green: 30/255, blue: 31/255, alpha: 1)
         titleLabel?.font    = UIFont(name: "georgia", size: 20)
         setTitleColor(.white, for: .normal)
-        layer.borderColor   = UIColor.white.cgColor
+        layer.borderColor   = UIColor.gray.cgColor
         layer.cornerRadius  = 25
-        layer.borderWidth   = 3.0
-        layer.borderColor   = UIColor.white.cgColor
+        layer.borderWidth   = 4.0
         styleShadow()
+        
     }
     
     
@@ -49,6 +49,7 @@ class CustomButton : UIButton {
         shake.duration          = 0.5
         shake.values            = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
         layer.add(shake, forKey: "shake")
+        
     }
     
     func flashAnimation(){
