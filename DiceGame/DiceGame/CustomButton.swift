@@ -25,7 +25,7 @@ class CustomButton : UIButton {
         backgroundColor     = UIColor(red: 150/255, green: 30/255, blue: 31/255, alpha: 1)
         titleLabel?.font    = UIFont(name: "georgia", size: 20)
         setTitleColor(.white, for: .normal)
-        layer.borderColor   = UIColor.gray.cgColor
+        layer.borderColor   = UIColor.white.cgColor
         layer.cornerRadius  = 25
         layer.borderWidth   = 4.0
         styleShadow()

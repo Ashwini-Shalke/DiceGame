@@ -13,8 +13,8 @@ class Cube: CATransformLayer {
     func transformAnimation(){
         let anim            = CABasicAnimation(keyPath: "transform")
         anim.fromValue      = self.transform
-        anim.toValue        = CATransform3DMakeRotation(CGFloat.pi, 1, 1, 1)
-        anim.duration       = 2
+        anim.toValue        = CATransform3DMakeRotation(CGFloat.pi, 1, 1, 0)
+        anim.duration       = 0.5
         anim.isCumulative   = true
         anim.repeatCount    = .greatestFiniteMagnitude
         add(anim, forKey: nil)
