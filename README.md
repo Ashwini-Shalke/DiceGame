@@ -2,7 +2,7 @@
 Swift Project to roll the 3D Dice.
 
 ## How it works?
-Basically, the app is launched with start button, you can see the 3D Dice rotating, when you click on the stop button, you will see the cube will stop rotating withthe random number on it. 
+Basically, the 3D Dice will rotate on the click of the start button and will stop rotating with some random side of the Dice on click of the stop button.
 
 Additonally, you can see the animations added to the start and stop button and also implemented the haptic and taptic.
 
@@ -16,6 +16,13 @@ Additonally, you can see the animations added to the start and stop button and a
 1. UIKit
 2. Crore Animations
 
+## What you can learn ?
+1. How to resuse the code using custom class.
+2. Create 3D objects using CATransform Layer.
+3. Animations like shake,pulse and flash.
+4. Also the haptic and taptic technique.
+
+I have mentioned all the links related to this project, which helped me alot to learn many new things about Swift.
 
 
 ## Reference Links 
