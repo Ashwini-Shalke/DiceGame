@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         constructCube()
     }
     
+    
     func constructCube() {
-        
         //create front face
         let transform1 = CATransform3DMakeTranslation(0, 0, 50)
         cube.addSublayer(cube.face(with: transform1, image: "DiceOne"))
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         cube.addSublayer(cube.face(with: transform6, image: "DiceSix"))
 
         // now position the transform layer in the center
-          cube.position = CGPoint(x: -100, y: -100)
+        cube.position = CGPoint(x: -100, y: -100)
 
         // and add the cube to our main view's layer
         view.layer.backgroundColor = UIColor(patternImage: UIImage(named: "GreenBackground")!).cgColor
@@ -65,8 +65,8 @@ class ViewController: UIViewController {
         view.addSubview(startButton)
         startButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-        startButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-        startButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 300),
+          startButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+          startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
         startButton.widthAnchor.constraint(equalToConstant: 200),
         startButton.heightAnchor.constraint(equalToConstant: 60)])
         startButton.setTitle("START", for: .normal)
@@ -75,13 +75,18 @@ class ViewController: UIViewController {
     }
 
        
+    func impactGenerator(){
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.prepare()
+        generator.impactOccurred()
+    }
 
     @objc func startRotation(){
+       impactGenerator()
         UIView.animate(withDuration: 0.5, animations: {
         self.cube.position = CGPoint(x: self.view.bounds.midX , y: self.view.bounds.midY)
-      
        }, completion: nil)
-self.cube.transformAnimation()
+        self.cube.transformAnimation()
         setStopButton()
     }
      
@@ -93,7 +98,7 @@ self.cube.transformAnimation()
         stopButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
         stopButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-        stopButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 300),
+        stopButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
         stopButton.widthAnchor.constraint(equalToConstant: 200),
         stopButton.heightAnchor.constraint(equalToConstant: 60)])
         stopButton.pulseAnimation()
@@ -101,14 +106,12 @@ self.cube.transformAnimation()
     }
     
     @objc func stopRotation(){
+        impactGenerator()
         let diceImageArray = ["DiceOne","DiceTwo","DiceThree","DiceFour","DiceFive","DiceSix"]
         let randomDiceFace = diceImageArray.randomElement()!
         let stopDiceFace = CATransform3DMakeTranslation(0, 0, 50)
-        
         cube.addSublayer(cube.face(with: stopDiceFace, image: randomDiceFace))
         cube.removeAllAnimations()
         setUpStartButton()
-        
-        
     }
 }
