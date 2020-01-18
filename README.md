@@ -7,13 +7,15 @@ Basically, the 3D Dice will rotate on the click of the start button and will sto
 Additonally, you can see the animations added to the start and stop button and also implemented the haptic and taptic.
 
 
+
 <a href="https://imgflip.com/gif/3mhdft"><img src="https://i.imgflip.com/3mhdft.gif" title="made at imgflip.com"/></a>
 
 
 
-## FrameWorks 
+## Frameworks 
 1. UIKit
 2. Crore Animations
+
 
 ## What you can learn ?
 1. How to resuse the code using custom class.
