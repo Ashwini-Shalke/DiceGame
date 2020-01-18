@@ -8,7 +8,7 @@ Additonally, you can see the animations added to the start and stop button and a
 
 ## Let's see how it works
 
-
+<a href="https://imgflip.com/gif/3mhdft"><img src="https://i.imgflip.com/3mhdft.gif" title="made at imgflip.com"/></a>
 
 
 
